@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "voidexpanse:observers_outpost",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+
+    "salt": 36547367996,
+
+    "spacing": 24,
+
+    "separation": 12
+  }
+}

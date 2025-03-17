@@ -42,6 +42,7 @@ public class VoidExpanse {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.ITEMS.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 

@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:exploration_map",
+              "destination": "voidexpanse:end_city",
+              "decoration": "red_x",
+              "zoom": 2,
+              "search_radius": 1000,
+              "skip_existing_chunks": false
+            }
+          ],
+          "name": "minecraft:map"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "voidexpanse:void_infused_heart",
+          "conditions": []
+        }
+      ]
+    }
+  ]
+}
