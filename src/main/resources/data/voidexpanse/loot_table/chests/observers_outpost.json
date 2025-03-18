@@ -11,6 +11,54 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "voidexpanse:voidinium_ingot",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 2.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "voidexpanse:concentrated_voidinium",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "voidexpanse:voidinium_shard",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
                 "max": 7.0,
                 "min": 2.0
               },
@@ -353,6 +401,26 @@
           "type": "minecraft:item",
           "name": "voidexpanse:void_fragment",
           "weight": 1
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:exploration_map",
+              "destination": "voidexpanse:observers_outpost",
+              "decoration": "red_x",
+              "zoom": 4,
+              "search_radius": 1000,
+              "skip_existing_chunks": true
+            }
+          ],
+          "name": "minecraft:map"
         }
       ],
       "rolls": 1.0

@@ -1,6 +1,12 @@
 package com.eclipsense.voidexpanse;
 
+import com.eclipsense.voidexpanse.block.ModBlocks;
 import com.eclipsense.voidexpanse.item.ModItems;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.CreativeModeTab;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.registries.DeferredRegister;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -27,6 +33,22 @@ public class VoidExpanse {
     // Define mod id in a common place for everything to reference
     public static final String MODID = "voidexpanse";
     private static final Logger LOGGER = LogUtils.getLogger();
+    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
+
+
+
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> VOID_EXPANSE = CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder()
+            .title(Component.translatable("itemGroup.voidexpanse")) //The language key for the title of your CreativeModeTab
+            .withTabsBefore(CreativeModeTabs.COMBAT)
+            .icon(() -> ModItems.VOID_INFUSED_HEART.get().getDefaultInstance())
+            .displayItems((parameters, output) -> {
+                output.accept(ModItems.VOID_INFUSED_HEART.get());
+                output.accept(ModItems.VOID_FRAGMENT.get());
+                output.accept(ModItems.END_STONE_VOIDINIUM_ORE_ITEM.get());
+                output.accept(ModItems.VOIDINIUM_SHARD.get());
+                output.accept(ModItems.CONCENTRATED_VOIDINIUM.get());
+                output.accept(ModItems.VOIDINIUM_INGOT.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
+            }).build());
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
@@ -42,6 +64,9 @@ public class VoidExpanse {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.ITEMS.register(modEventBus);
+
+        ModBlocks.BLOCKS.register(modEventBus);
+        CREATIVE_MODE_TABS.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

@@ -1,5 +1,11 @@
 {
-  "item.voidexpanse.outpost_map": "Outpost Map",
+  // Items
   "item.voidexpanse.void_infused_heart": "Void Infused Heart",
-  "item.voidexpanse.void_fragment": "Fragment of the Void"
+  "item.voidexpanse.void_fragment": "Fragment of the Void",
+
+  // Blocks
+  "block.voidexpanse.end_stone_voidinium_ore": "End Stone Voidinium Ore",
+
+  // Creative Mod Tab
+  "itemGroup.voidexpanse": "The Void Expanse"
 }

@@ -7,11 +7,12 @@
   ],
   "placement": {
     "type": "minecraft:random_spread",
-
-    "salt": 36547367996,
-
-    "spacing": 24,
-
-    "separation": 12
+    "salt": 36547367,
+    "spacing": 60,
+    "separation": 45,
+    "exclusion_zone": {
+      "other_set": "minecraft:end_cities",
+      "chunk_count": 2
+    }
   }
 }

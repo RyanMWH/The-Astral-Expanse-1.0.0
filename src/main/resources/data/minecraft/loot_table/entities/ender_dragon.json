@@ -9,11 +9,11 @@
           "functions": [
             {
               "function": "minecraft:exploration_map",
-              "destination": "voidexpanse:end_city",
+              "destination": "voidexpanse:observers_outpost",
               "decoration": "red_x",
               "zoom": 2,
-              "search_radius": 1000,
-              "skip_existing_chunks": false
+              "search_radius": 100,
+              "skip_existing_chunks": true
             }
           ],
           "name": "minecraft:map"

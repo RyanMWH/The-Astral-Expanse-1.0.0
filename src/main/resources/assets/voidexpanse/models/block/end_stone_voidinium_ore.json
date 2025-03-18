@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "voidexpanse:block/end_stone_voidinium_ore"
+  }
+}

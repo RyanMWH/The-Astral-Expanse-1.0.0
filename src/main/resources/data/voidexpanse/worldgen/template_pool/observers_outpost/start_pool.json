@@ -1,13 +1,14 @@
 {
+  "name": "voidexpanse:observers_outpost/start_pool",
   "fallback": "minecraft:empty",
   "elements": [
     {
       "weight": 1,
-      "elements": {
-        "location": "voidexpanse:observers_outpost_perfect",
-        "processors": "minecraft:empty",
+      "element": {
+        "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
-        "element_type": "minecraft:single_pool_element"
+        "location": "voidexpanse:observers_outpost",
+        "processors": "minecraft:empty"
       }
     }
   ]
