@@ -16,15 +16,20 @@ public class ModBlocks {
     // Blocks for/from End
     public static final DeferredBlock<Block> END_STONE_VOIDINIUM_ORE = BLOCKS.registerBlock(
             "end_stone_voidinium_ore",
-                    VoidiniumOreBlock::new, BlockBehaviour.Properties.of()
-                            .mapColor(MapColor.COLOR_PURPLE)
-                            .lightLevel((x) -> {return 7; })
-                    .sound(SoundType.STONE));
+                    VoidiniumOreBlock::new,
+            BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_PURPLE)
+                    .lightLevel((state) -> {return 7; })
+                    .sound(SoundType.STONE)
+                    .strength(5f)
+                    .requiresCorrectToolForDrops());
 
     public static final DeferredBlock<Block> VOIDINIUM_BLOCK = BLOCKS.registerSimpleBlock(
             "voidinium_block",
             BlockBehaviour.Properties.of()
-                    .sound(SoundType.METAL));
+                    .sound(SoundType.METAL)
+                    .strength(5f)
+                    .requiresCorrectToolForDrops());
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

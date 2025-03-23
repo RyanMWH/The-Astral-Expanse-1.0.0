@@ -2,9 +2,13 @@
   // Items
   "item.voidexpanse.void_infused_heart": "Void Infused Heart",
   "item.voidexpanse.void_fragment": "Fragment of the Void",
+  "item.voidexpanse.voidinium_shard": "Voidinium Shard",
+  "item.voidexpanse.concentrated_voidinium": "Concentrated Voidinium",
+  "item.voidexpanse.voidinium_ingot": "Voidinium Ingot",
 
   // Blocks
   "block.voidexpanse.end_stone_voidinium_ore": "End Stone Voidinium Ore",
+  "block.voidexpanse.voidinium_block": "Voidinium Block",
 
   // Creative Mod Tab
   "itemGroup.voidexpanse": "The Void Expanse"

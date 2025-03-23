@@ -4,7 +4,10 @@ import com.eclipsense.voidexpanse.block.ModBlocks;
 import com.eclipsense.voidexpanse.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.slf4j.Logger;
@@ -47,8 +50,10 @@ public class VoidExpanse {
                 output.accept(ModItems.END_STONE_VOIDINIUM_ORE_ITEM.get());
                 output.accept(ModItems.VOIDINIUM_SHARD.get());
                 output.accept(ModItems.CONCENTRATED_VOIDINIUM.get());
-                output.accept(ModItems.VOIDINIUM_INGOT.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
+                output.accept(ModItems.VOIDINIUM_INGOT.get());
+                output.accept(ModItems.VOIDINIUM_BLOCK_ITEM.get());// Add the example item to the tab. For your own tabs, this method is preferred over the event
             }).build());
+
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.

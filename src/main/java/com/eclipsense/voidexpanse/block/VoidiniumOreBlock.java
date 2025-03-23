@@ -2,12 +2,17 @@ package com.eclipsense.voidexpanse.block;
 
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.Commands;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.DustParticleOptions;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -16,6 +21,8 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
+
+import java.util.Random;
 
 public class VoidiniumOreBlock extends Block {
     // Codec are serialization and deserialization
@@ -36,9 +43,32 @@ public class VoidiniumOreBlock extends Block {
         }
     }
 
+    @Override
     protected void attack(BlockState state, Level level, BlockPos pos, Player player) {
         interact(state, level, pos);
-        super.attack(state, level, pos, player);
+        if(!level.isClientSide()) {
+            ItemStack itemInHand = player.getItemInHand(InteractionHand.MAIN_HAND);
+            if (!itemInHand.is(Items.NETHERITE_PICKAXE)) {
+                double x = player.getX();
+                double y = player.getY();
+                double z = player.getZ();
+                // We now have three positional arguments
+                Random random = new Random();
+                double randomx = random.nextDouble(11) - 5;
+                double randomy = random.nextDouble(11) - 5;
+                double randomz = random.nextDouble(11) - 5;
+                // Now we have the random variation between -10,10
+                double newx = x + randomx;
+                double newy = y + randomy;
+                double newz = z + randomz;
+                // Now we teleport the player.
+                player.teleportTo(newx, newy, newz);
+            }
+        }
+    }
+
+    protected void attack(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand) {
+
     }
 
     public void stepOn(Level level, BlockPos pos, BlockState state, Entity ent) {
