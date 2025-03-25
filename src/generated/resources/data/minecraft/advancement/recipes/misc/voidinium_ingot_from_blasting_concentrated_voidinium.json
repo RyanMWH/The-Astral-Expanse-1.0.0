@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_concentrated_voidinium": {
+      "conditions": {
+        "items": [
+          {
+            "items": "voidexpanse:concentrated_voidinium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:voidinium_ingot_from_blasting_concentrated_voidinium"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_concentrated_voidinium"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:voidinium_ingot_from_blasting_concentrated_voidinium"
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+// 1.21.4	2025-03-22T23:18:30.20194	Registries
+273036e935f0250fc0903cbc09df5edcd11cca2a data/voidexpanse/neoforge/biome_modifier/add_voidinium_ore.json
+8fbd7eecb133332e94634b4d08fe81f8fa1b2cd5 data/voidexpanse/worldgen/configured_feature/end_stone_voidinium_ore.json
+3c0a1c2668fcf8ee93f2f0e002398fea96b618b3 data/voidexpanse/worldgen/placed_feature/end_voidinium_ore_placed.json
