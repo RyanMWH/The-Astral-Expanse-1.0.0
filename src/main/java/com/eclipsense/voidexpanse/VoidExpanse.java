@@ -51,7 +51,14 @@ public class VoidExpanse {
                 output.accept(ModItems.VOIDINIUM_SHARD.get());
                 output.accept(ModItems.CONCENTRATED_VOIDINIUM.get());
                 output.accept(ModItems.VOIDINIUM_INGOT.get());
-                output.accept(ModItems.VOIDINIUM_BLOCK_ITEM.get());// Add the example item to the tab. For your own tabs, this method is preferred over the event
+                output.accept(ModItems.VOIDINIUM_BLOCK_ITEM.get());
+                output.accept(ModItems.VOIDINIUM_SWORD);
+                output.accept(ModItems.VOIDINIUM_PICKAXE);
+                output.accept(ModItems.VOIDINIUM_AXE);
+                output.accept(ModItems.VOIDINIUM_SHOVEL);
+                output.accept(ModItems.VOIDINIUM_HOE);
+
+
             }).build());
 
 

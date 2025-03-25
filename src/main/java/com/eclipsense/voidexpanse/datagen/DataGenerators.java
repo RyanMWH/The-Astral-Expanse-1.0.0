@@ -6,6 +6,8 @@ import com.eclipsense.voidexpanse.datagen.data.DataPackGen;
 import com.eclipsense.voidexpanse.datagen.loot.LootTableGen;
 import com.eclipsense.voidexpanse.datagen.models.ModelGen;
 import com.eclipsense.voidexpanse.datagen.recipes.RecipeGen;
+import com.eclipsense.voidexpanse.datagen.tags.BlockTagGen;
+import com.eclipsense.voidexpanse.datagen.tags.ItemTagGen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -14,6 +16,7 @@ import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 
+import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 
 
@@ -51,5 +54,13 @@ public class DataGenerators {
                 new DataPackGen(packOutput, lookupProvider));
 
         event.createProvider(RecipeGen.Runner::new);
+
+        BlockTagsProvider blockTagsProvider = new BlockTagGen(packOutput, lookupProvider);
+
+        generator.addProvider(true,
+                blockTagsProvider);
+
+        generator.addProvider(true,
+                new ItemTagGen(packOutput, lookupProvider, blockTagsProvider.contentsGetter()));
     }
 }

@@ -25,5 +25,11 @@ public class ItemModelGen extends ItemModelGenerators {
         this.generateFlatItem(ModItems.VOIDINIUM_SHARD.get(), ModelTemplates.FLAT_ITEM);
         this.generateFlatItem(ModItems.CONCENTRATED_VOIDINIUM.get(), ModelTemplates.FLAT_ITEM);
         this.generateFlatItem(ModItems.VOIDINIUM_INGOT.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.VOIDINIUM_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        this.generateFlatItem(ModItems.VOIDINIUM_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        this.generateFlatItem(ModItems.VOIDINIUM_AXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        this.generateFlatItem(ModItems.VOIDINIUM_SHOVEL.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        this.generateFlatItem(ModItems.VOIDINIUM_HOE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+
     }
 }
