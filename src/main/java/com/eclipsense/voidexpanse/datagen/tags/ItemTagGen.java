@@ -8,7 +8,6 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
-import net.neoforged.neoforge.common.Tags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -25,6 +24,8 @@ public class ItemTagGen extends ItemTagsProvider {
         tag(ModTags.Items.VOIDINIUM_TOOL_MATERIALS)
                 .add(ModItems.VOIDINIUM_INGOT.get());
 
+        tag(ItemTags.SWORD_ENCHANTABLE)
+                .add(ModItems.VOIDINIUM_SWORD.get());
         tag(ItemTags.SWORDS)
                 .add(ModItems.VOIDINIUM_SWORD.get());
         tag(ItemTags.PICKAXES)
@@ -36,6 +37,11 @@ public class ItemTagGen extends ItemTagsProvider {
         tag(ItemTags.HOES)
                 .add(ModItems.VOIDINIUM_HOE.get());
 
+        tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.VOIDINIUM_HELMET.get())
+                .add(ModItems.VOIDINIUM_CHESTPLATE.get())
+                .add(ModItems.VOIDINIUM_LEGGINGS.get())
+                .add(ModItems.VOIDINIUM_BOOTS.get());
 
 
 

@@ -1,16 +1,11 @@
 package com.eclipsense.voidexpanse.item;
 
 import com.eclipsense.voidexpanse.VoidExpanse;
-import com.eclipsense.voidexpanse.block.ModBlocks;
-import com.eclipsense.voidexpanse.util.ModTags;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceKey;
+import com.eclipsense.voidexpanse.item.equipment.VoidArmorMaterials;
+import com.eclipsense.voidexpanse.item.equipment.VoidToolTiers;
 import net.minecraft.world.item.*;
-import net.minecraft.world.level.block.Block;
+import net.minecraft.world.item.equipment.ArmorType;
 import net.neoforged.bus.api.IEventBus;
-import net.neoforged.neoforge.registries.DeferredBlock;
-import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -39,7 +34,7 @@ public class ModItems {
             properties -> new GlintItem(properties.fireResistant().stacksTo(16)));
 
     // Voidinium Tools
-    public static final DeferredItem<SwordItem> VOIDINIUM_SWORD = ITEMS.registerItem("voidinum_sword",
+    public static final DeferredItem<SwordItem> VOIDINIUM_SWORD = ITEMS.registerItem("voidinium_sword",
             properties -> new SwordItem(VoidToolTiers.VOIDINIUM, 3.5F, -2.2F, properties),
             new Item.Properties());
     public static final DeferredItem<ShovelItem> VOIDINIUM_SHOVEL = ITEMS.registerItem("voidinium_shovel",
@@ -54,6 +49,20 @@ public class ModItems {
     public static final DeferredItem<HoeItem> VOIDINIUM_HOE = ITEMS.registerItem("voidinium_hoe",
             properties -> new HoeItem(VoidToolTiers.VOIDINIUM, -4.0F, 0.0F, properties),
             new Item.Properties());
+
+    // Voidinium Armor
+    public static final DeferredItem<ArmorItem> VOIDINIUM_HELMET = ITEMS.registerItem("voidinium_helmet",
+            properties -> new ArmorItem(VoidArmorMaterials.VOIDINIUM_ARMOR_MATERIAL, ArmorType.HELMET,
+                    properties));
+    public static final DeferredItem<ArmorItem> VOIDINIUM_CHESTPLATE = ITEMS.registerItem("voidinium_chestplate",
+            properties -> new ArmorItem(VoidArmorMaterials.VOIDINIUM_ARMOR_MATERIAL, ArmorType.CHESTPLATE,
+                    properties));
+    public static final DeferredItem<ArmorItem> VOIDINIUM_LEGGINGS = ITEMS.registerItem("voidinium_leggings",
+            properties -> new ArmorItem(VoidArmorMaterials.VOIDINIUM_ARMOR_MATERIAL, ArmorType.LEGGINGS,
+                    properties));
+    public static final DeferredItem<ArmorItem> VOIDINIUM_BOOTS = ITEMS.registerItem("voidinium_boots",
+            properties -> new ArmorItem(VoidArmorMaterials.VOIDINIUM_ARMOR_MATERIAL, ArmorType.BOOTS,
+                    properties));
 
     // Block items
     public static final DeferredItem<BlockItem> END_STONE_VOIDINIUM_ORE_ITEM = ITEMS.registerSimpleBlockItem(

@@ -6,6 +6,22 @@
   "item.voidexpanse.concentrated_voidinium": "Concentrated Voidinium",
   "item.voidexpanse.voidinium_ingot": "Voidinium Ingot",
 
+  // Tools
+  "item.voidexpanse.voidinium_sword": "Voidinium Sword",
+  "item.voidexpanse.voidinium_pickaxe": "Voidinium Pickaxe",
+  "item.voidexpanse.voidinium_axe": "Voidinium Axe",
+  "item.voidexpanse.voidinium_shovel": "Voidinium Shovel",
+  "item.voidexpanse.voidinium_hoe": "Voidinium Hoe",
+
+  // Armors
+  "item.voidexpanse.voidinium_boots": "Voidinium Boots",
+  "item.voidexpanse.voidinium_leggings": "Voidinium Leggings",
+  "item.voidexpanse.voidinium_chestplate": "Voidinium Chestplate",
+  "item.voidexpanse.voidinium_helmet": "Voidinium Helmet",
+
+
+
+
   // Blocks
   "block.voidexpanse.end_stone_voidinium_ore": "End Stone Voidinium Ore",
   "block.voidexpanse.voidinium_block": "Voidinium Block",

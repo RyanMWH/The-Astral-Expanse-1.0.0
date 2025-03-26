@@ -1,11 +1,14 @@
 package com.eclipsense.voidexpanse.datagen.models;
 
 import com.eclipsense.voidexpanse.item.ModItems;
+import com.eclipsense.voidexpanse.item.equipment.VoidEquipmentAssets;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ItemModelOutput;
 import net.minecraft.client.data.models.model.ModelInstance;
 import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.equipment.EquipmentAsset;
+import net.minecraft.world.item.equipment.EquipmentAssets;
 
 import java.util.function.BiConsumer;
 
@@ -30,6 +33,10 @@ public class ItemModelGen extends ItemModelGenerators {
         this.generateFlatItem(ModItems.VOIDINIUM_AXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         this.generateFlatItem(ModItems.VOIDINIUM_SHOVEL.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         this.generateFlatItem(ModItems.VOIDINIUM_HOE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        this.generateTrimmableItem(ModItems.VOIDINIUM_HELMET.get(), VoidEquipmentAssets.VOIDINIUM, "helment", false);
+        this.generateTrimmableItem(ModItems.VOIDINIUM_CHESTPLATE.get(), VoidEquipmentAssets.VOIDINIUM, "chestplate", false);
+        this.generateTrimmableItem(ModItems.VOIDINIUM_LEGGINGS.get(), VoidEquipmentAssets.VOIDINIUM, "leggings", false);
+        this.generateTrimmableItem(ModItems.VOIDINIUM_BOOTS.get(), VoidEquipmentAssets.VOIDINIUM, "boots", false);
 
     }
 }

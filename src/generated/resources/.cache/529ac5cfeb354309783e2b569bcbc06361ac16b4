@@ -1,7 +1,9 @@
-// 1.21.4	2025-03-25T01:13:56.275326	Tags for minecraft:item mod id voidexpanse
+// 1.21.4	2025-03-25T22:42:04.714661	Tags for minecraft:item mod id voidexpanse
 53dc050f6fb18b5f6587afdc964e72cf4b7d55a9 data/minecraft/tags/item/axes.json
+3543b32568d316eb58f69d36afd9fd85c10de199 data/minecraft/tags/item/enchantable/sword.json
 dc294879ea8b7dcaee1de9bb6a1ff4fd6ff09c9d data/minecraft/tags/item/hoes.json
 f892f43054ef5713cffdb691be1a7f41c0db49ba data/minecraft/tags/item/pickaxes.json
 d74badd33f9cd17d4121d08002795457d1b1ef00 data/minecraft/tags/item/shovels.json
-e452c42d3f86781ade86287b89bc21837423506c data/minecraft/tags/item/swords.json
+3543b32568d316eb58f69d36afd9fd85c10de199 data/minecraft/tags/item/swords.json
+f08405430e0b96d9eb9321bca5313815ac4cda5d data/minecraft/tags/item/trimmable_armor.json
 bb1fad12820e1b5bc15e49596cb7ec71d1c17ea7 data/voidexpanse/tags/item/voidinium_tool_materials.json
