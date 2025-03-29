@@ -24,6 +24,12 @@ public class ItemTagGen extends ItemTagsProvider {
         tag(ModTags.Items.VOIDINIUM_TOOL_MATERIALS)
                 .add(ModItems.VOIDINIUM_INGOT.get());
 
+        tag(ModTags.Items.VOIDINIUM_ARMOR)
+                .add(ModItems.VOIDINIUM_HELMET.get())
+                .add(ModItems.VOIDINIUM_CHESTPLATE.get())
+                .add(ModItems.VOIDINIUM_LEGGINGS.get())
+                .add(ModItems.VOIDINIUM_BOOTS.get());
+
         tag(ItemTags.SWORD_ENCHANTABLE)
                 .add(ModItems.VOIDINIUM_SWORD.get());
         tag(ItemTags.SWORDS)
@@ -38,6 +44,12 @@ public class ItemTagGen extends ItemTagsProvider {
                 .add(ModItems.VOIDINIUM_HOE.get());
 
         tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.VOIDINIUM_HELMET.get())
+                .add(ModItems.VOIDINIUM_CHESTPLATE.get())
+                .add(ModItems.VOIDINIUM_LEGGINGS.get())
+                .add(ModItems.VOIDINIUM_BOOTS.get());
+
+        tag(ItemTags.ARMOR_ENCHANTABLE)
                 .add(ModItems.VOIDINIUM_HELMET.get())
                 .add(ModItems.VOIDINIUM_CHESTPLATE.get())
                 .add(ModItems.VOIDINIUM_LEGGINGS.get())

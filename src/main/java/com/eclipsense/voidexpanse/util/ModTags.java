@@ -6,6 +6,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
@@ -24,6 +25,7 @@ public class ModTags {
     public static class Items {
 
         public static final TagKey<Item> VOIDINIUM_TOOL_MATERIALS = createTag("voidinium_tool_materials");
+        public static final TagKey<Item> VOIDINIUM_ARMOR = createTag("voidinium_armor");
 
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(VoidExpanse.MODID, name));

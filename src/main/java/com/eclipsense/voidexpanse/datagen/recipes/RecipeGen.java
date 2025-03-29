@@ -74,7 +74,42 @@ public class RecipeGen extends RecipeProvider{
                 .define('S', Items.STICK).define('V', ModItems.VOIDINIUM_INGOT)
                 .unlockedBy("has_voidinium_ingot", has(ModItems.VOIDINIUM_INGOT))
                 .save(output);
+
+        // Voidinium Armor
+        shaped(RecipeCategory.TOOLS, ModItems.VOIDINIUM_HELMET)
+                .pattern("VVV")
+                .pattern("V V")
+                .define('V', ModItems.VOIDINIUM_INGOT)
+                .unlockedBy("has_voidinium_ingot", has(ModItems.VOIDINIUM_INGOT))
+                .save(output);
+
+        shaped(RecipeCategory.COMBAT, ModItems.VOIDINIUM_CHESTPLATE)
+                .pattern("V V")
+                .pattern("VVV")
+                .pattern("VVV")
+                .define('V', ModItems.VOIDINIUM_INGOT)
+                .unlockedBy("has_voidinium_ingot", has(ModItems.VOIDINIUM_INGOT))
+                .save(output);
+
+        shaped(RecipeCategory.COMBAT, ModItems.VOIDINIUM_LEGGINGS)
+                .pattern("VVV")
+                .pattern("V V")
+                .pattern("V V")
+                .define('V', ModItems.VOIDINIUM_INGOT)
+                .unlockedBy("has_voidinium_ingot", has(ModItems.VOIDINIUM_INGOT))
+                .save(output);
+
+        shaped(RecipeCategory.COMBAT, ModItems.VOIDINIUM_BOOTS)
+                .pattern("V V")
+                .pattern("V V")
+                .define('V', ModItems.VOIDINIUM_INGOT)
+                .unlockedBy("has_voidinium_ingot", has(ModItems.VOIDINIUM_INGOT))
+                .save(output);
+
+
     }
+
+
 
     // The runner to add to the data generator
     public static class Runner extends RecipeProvider.Runner {

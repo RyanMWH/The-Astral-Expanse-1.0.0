@@ -57,6 +57,10 @@ public class VoidExpanse {
                 output.accept(ModItems.VOIDINIUM_AXE);
                 output.accept(ModItems.VOIDINIUM_SHOVEL);
                 output.accept(ModItems.VOIDINIUM_HOE);
+                output.accept(ModItems.VOIDINIUM_HELMET);
+                output.accept(ModItems.VOIDINIUM_CHESTPLATE);
+                output.accept(ModItems.VOIDINIUM_LEGGINGS);
+                output.accept(ModItems.VOIDINIUM_BOOTS);
 
 
             }).build());

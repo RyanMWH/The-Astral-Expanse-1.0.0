@@ -1,6 +1,7 @@
 package com.eclipsense.voidexpanse.item;
 
 import com.eclipsense.voidexpanse.VoidExpanse;
+import com.eclipsense.voidexpanse.armor.VoidSpecialArmor;
 import com.eclipsense.voidexpanse.item.equipment.VoidArmorMaterials;
 import com.eclipsense.voidexpanse.item.equipment.VoidToolTiers;
 import net.minecraft.world.item.*;
@@ -51,8 +52,8 @@ public class ModItems {
             new Item.Properties());
 
     // Voidinium Armor
-    public static final DeferredItem<ArmorItem> VOIDINIUM_HELMET = ITEMS.registerItem("voidinium_helmet",
-            properties -> new ArmorItem(VoidArmorMaterials.VOIDINIUM_ARMOR_MATERIAL, ArmorType.HELMET,
+    public static final DeferredItem<VoidSpecialArmor> VOIDINIUM_HELMET = ITEMS.registerItem("voidinium_helmet",
+            properties -> new VoidSpecialArmor(VoidArmorMaterials.VOIDINIUM_ARMOR_MATERIAL, ArmorType.HELMET,
                     properties));
     public static final DeferredItem<ArmorItem> VOIDINIUM_CHESTPLATE = ITEMS.registerItem("voidinium_chestplate",
             properties -> new ArmorItem(VoidArmorMaterials.VOIDINIUM_ARMOR_MATERIAL, ArmorType.CHESTPLATE,
