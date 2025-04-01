@@ -1,6 +1,7 @@
 package com.eclipsense.voidexpanse;
 
 import com.eclipsense.voidexpanse.entity.VoidEntities;
+import com.eclipsense.voidexpanse.entity.client.EnderWisp.EnderWispModel;
 import com.eclipsense.voidexpanse.entity.client.EnderWisp.EnderWispRenderer;
 import com.eclipsense.voidexpanse.init.ModBlocks;
 import com.eclipsense.voidexpanse.init.ModItems;
@@ -8,6 +9,7 @@ import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.slf4j.Logger;
@@ -80,11 +82,11 @@ public class VoidExpanse {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
-        ModItems.ITEMS.register(modEventBus);
+        ModItems.register(modEventBus);
 
-        ModBlocks.BLOCKS.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
-        VoidEntities.ENTITY_TYPES.register(modEventBus);
+        VoidEntities.register(modEventBus);
         CREATIVE_MODE_TABS.register(modEventBus);
 
         // Register the item to a creative tab
@@ -118,7 +120,13 @@ public class VoidExpanse {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-            EntityRenderers.register(VoidEntities.EnderWisp.get(), EnderWispRenderer::new);
+            EntityRenderers.register(VoidEntities.ENDER_WISP.get(), EnderWispRenderer::new);
+        }
+
+        @SubscribeEvent
+        public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
+            // Register the model layer
+            event.registerLayerDefinition(EnderWispModel.LAYER_LOCATION, EnderWispModel::createBodyLayer);
         }
     }
 }

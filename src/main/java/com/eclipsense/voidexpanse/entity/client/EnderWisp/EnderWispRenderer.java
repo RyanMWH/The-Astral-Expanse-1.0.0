@@ -25,4 +25,12 @@ public class EnderWispRenderer extends MobRenderer<EnderWispEntity, EnderWispRen
     public ResourceLocation getTextureLocation(EnderWispRenderState enderWispRenderState) {
         return TEXTURE;
     }
+
+    @Override
+    public void extractRenderState(EnderWispEntity entity, EnderWispRenderState renderState, float partialTick) {
+        super.extractRenderState(entity, renderState, partialTick);
+
+        // Copy animation states from entity to render state
+        renderState.idleAnimationState.copyFrom(entity.idleAnimationState);
+    }
 }

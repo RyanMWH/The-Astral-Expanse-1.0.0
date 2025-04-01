@@ -18,7 +18,7 @@ public class VoidEntities {
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES =
             DeferredRegister.create(BuiltInRegistries.ENTITY_TYPE, VoidExpanse.MODID);
 
-    public static final Supplier<EntityType<EnderWispEntity>> EnderWisp =
+    public static final Supplier<EntityType<EnderWispEntity>> ENDER_WISP =
             ENTITY_TYPES.register("ender_wisp",
                     () -> EntityType.Builder.of(EnderWispEntity::new, MobCategory.CREATURE)
                             .sized(0.25f, 0.25f).build(ResourceKey.create(Registries.ENTITY_TYPE, ResourceLocation.fromNamespaceAndPath("voidexpanse","ender_wisp"))));

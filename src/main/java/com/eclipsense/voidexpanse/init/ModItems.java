@@ -78,7 +78,7 @@ public class ModItems {
 
     // Spawn eggs
     public static final DeferredItem<SpawnEggItem> ENDER_WISP_SPAWN_EGG = ITEMS.registerItem("ender_wisp_spawn_egg",
-            properties -> new SpawnEggItem(VoidEntities.EnderWisp.get(), properties));
+            properties -> new SpawnEggItem(VoidEntities.ENDER_WISP.get(), properties));
 
 
 

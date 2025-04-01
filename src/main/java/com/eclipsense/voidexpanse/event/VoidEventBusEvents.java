@@ -19,7 +19,7 @@ public class VoidEventBusEvents {
 
     @SubscribeEvent
     public static void registerAttribute(EntityAttributeCreationEvent event){
-        event.put(VoidEntities.EnderWisp.get(), EnderWispEntity.createAttributes().build());
+        event.put(VoidEntities.ENDER_WISP.get(), EnderWispEntity.createAttributes().build());
     }
 
 }

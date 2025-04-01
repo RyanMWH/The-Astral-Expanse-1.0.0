@@ -1,8 +1,9 @@
-// 1.21.4	2025-03-25T22:29:52.766496	Model Definitions - voidexpanse
+// 1.21.4	2025-04-01T11:36:15.399544	Model Definitions - voidexpanse
 b1e1060df80a55ad110ef5a9745bf3d9259c389b assets/voidexpanse/blockstates/end_stone_voidinium_ore.json
 2b5a8d7883eb27a079bfb77931c17d9e99c1134f assets/voidexpanse/blockstates/voidinium_block.json
 edd9653181d9c54e001b5d9d8525f59604753065 assets/voidexpanse/items/concentrated_voidinium.json
 150216dfceea5e6db696f0151a2d4827350b09ea assets/voidexpanse/items/end_stone_voidinium_ore.json
+68af9c6a638bc6503797baf850be124c6fcdc2f0 assets/voidexpanse/items/ender_wisp_spawn_egg.json
 32465be3cdffbfbb747aa3fe9ded5a4d6ac0cc6a assets/voidexpanse/items/void_fragment.json
 a91a5fd96be54837cbb156b1086b2f64bb1c6654 assets/voidexpanse/items/void_infused_heart.json
 0487cffabfc49e28b657b94daf8c46ef15b4bcae assets/voidexpanse/items/voidinium_axe.json

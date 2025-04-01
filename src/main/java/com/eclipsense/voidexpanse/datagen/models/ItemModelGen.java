@@ -35,6 +35,6 @@ public class ItemModelGen extends ItemModelGenerators {
         this.generateTrimmableItem(ModItems.VOIDINIUM_CHESTPLATE.get(), VoidEquipmentAssets.VOIDINIUM, "chestplate", false);
         this.generateTrimmableItem(ModItems.VOIDINIUM_LEGGINGS.get(), VoidEquipmentAssets.VOIDINIUM, "leggings", false);
         this.generateTrimmableItem(ModItems.VOIDINIUM_BOOTS.get(), VoidEquipmentAssets.VOIDINIUM, "boots", false);
-
+        this.generateSpawnEgg(ModItems.ENDER_WISP_SPAWN_EGG.get(), 1447446, 14711290);
     }
 }
