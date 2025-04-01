@@ -1,7 +1,7 @@
 package com.eclipsense.voidexpanse.datagen.loot;
 
-import com.eclipsense.voidexpanse.block.ModBlocks;
-import com.eclipsense.voidexpanse.item.ModItems;
+import com.eclipsense.voidexpanse.init.ModBlocks;
+import com.eclipsense.voidexpanse.init.ModItems;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;

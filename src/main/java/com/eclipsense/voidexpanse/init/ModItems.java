@@ -1,17 +1,20 @@
-package com.eclipsense.voidexpanse.item;
+package com.eclipsense.voidexpanse.init;
 
 import com.eclipsense.voidexpanse.VoidExpanse;
 import com.eclipsense.voidexpanse.armor.VoidSpecialArmor;
+import com.eclipsense.voidexpanse.entity.VoidEntities;
+import com.eclipsense.voidexpanse.item.GlintItem;
 import com.eclipsense.voidexpanse.item.equipment.VoidArmorMaterials;
 import com.eclipsense.voidexpanse.item.equipment.VoidToolTiers;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.equipment.ArmorType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-import static com.eclipsense.voidexpanse.block.ModBlocks.END_STONE_VOIDINIUM_ORE;
-import static com.eclipsense.voidexpanse.block.ModBlocks.VOIDINIUM_BLOCK;
+import static com.eclipsense.voidexpanse.init.ModBlocks.END_STONE_VOIDINIUM_ORE;
+import static com.eclipsense.voidexpanse.init.ModBlocks.VOIDINIUM_BLOCK;
 
 public class ModItems {
     //public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(Registries.ITEM, VoidExpanse.MODID);
@@ -72,6 +75,11 @@ public class ModItems {
     public static final DeferredItem<BlockItem> VOIDINIUM_BLOCK_ITEM = ITEMS.registerSimpleBlockItem(
             "voidinium_block",
             VOIDINIUM_BLOCK);
+
+    // Spawn eggs
+    public static final DeferredItem<SpawnEggItem> ENDER_WISP_SPAWN_EGG = ITEMS.registerItem("ender_wisp_spawn_egg",
+            properties -> new SpawnEggItem(VoidEntities.EnderWisp.get(), properties));
+
 
 
 

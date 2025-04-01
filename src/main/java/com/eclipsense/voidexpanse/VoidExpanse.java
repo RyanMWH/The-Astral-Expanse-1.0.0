@@ -1,13 +1,13 @@
 package com.eclipsense.voidexpanse;
 
-import com.eclipsense.voidexpanse.block.ModBlocks;
-import com.eclipsense.voidexpanse.item.ModItems;
+import com.eclipsense.voidexpanse.entity.VoidEntities;
+import com.eclipsense.voidexpanse.entity.client.EnderWisp.EnderWispRenderer;
+import com.eclipsense.voidexpanse.init.ModBlocks;
+import com.eclipsense.voidexpanse.init.ModItems;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.level.block.Block;
-import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.slf4j.Logger;
@@ -61,6 +61,7 @@ public class VoidExpanse {
                 output.accept(ModItems.VOIDINIUM_CHESTPLATE);
                 output.accept(ModItems.VOIDINIUM_LEGGINGS);
                 output.accept(ModItems.VOIDINIUM_BOOTS);
+                output.accept(ModItems.ENDER_WISP_SPAWN_EGG);
 
 
             }).build());
@@ -82,6 +83,8 @@ public class VoidExpanse {
         ModItems.ITEMS.register(modEventBus);
 
         ModBlocks.BLOCKS.register(modEventBus);
+
+        VoidEntities.ENTITY_TYPES.register(modEventBus);
         CREATIVE_MODE_TABS.register(modEventBus);
 
         // Register the item to a creative tab
@@ -115,6 +118,7 @@ public class VoidExpanse {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+            EntityRenderers.register(VoidEntities.EnderWisp.get(), EnderWispRenderer::new);
         }
     }
 }

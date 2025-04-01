@@ -1,6 +1,6 @@
 package com.eclipsense.voidexpanse.item.equipment;
 
-import com.eclipsense.voidexpanse.util.ModTags;
+import com.eclipsense.voidexpanse.init.ModTags;
 import net.minecraft.Util;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;

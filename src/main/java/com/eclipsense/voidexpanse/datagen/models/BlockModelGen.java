@@ -1,6 +1,6 @@
 package com.eclipsense.voidexpanse.datagen.models;
 
-import com.eclipsense.voidexpanse.block.ModBlocks;
+import com.eclipsense.voidexpanse.init.ModBlocks;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelOutput;
 import net.minecraft.client.data.models.blockstates.BlockStateGenerator;

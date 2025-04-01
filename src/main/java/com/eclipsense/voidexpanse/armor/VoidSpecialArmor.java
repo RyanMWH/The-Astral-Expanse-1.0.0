@@ -1,6 +1,6 @@
 package com.eclipsense.voidexpanse.armor;
 
-import com.eclipsense.voidexpanse.util.ModTags;
+import com.eclipsense.voidexpanse.init.ModTags;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;

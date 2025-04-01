@@ -1,8 +1,8 @@
 package com.eclipsense.voidexpanse.datagen.tags;
 
 import com.eclipsense.voidexpanse.VoidExpanse;
-import com.eclipsense.voidexpanse.item.ModItems;
-import com.eclipsense.voidexpanse.util.ModTags;
+import com.eclipsense.voidexpanse.init.ModItems;
+import com.eclipsense.voidexpanse.init.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;

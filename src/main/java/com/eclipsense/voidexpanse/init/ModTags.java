@@ -1,4 +1,4 @@
-package com.eclipsense.voidexpanse.util;
+package com.eclipsense.voidexpanse.init;
 
 import com.eclipsense.voidexpanse.VoidExpanse;
 
@@ -6,7 +6,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
-import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 

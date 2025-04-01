@@ -1,14 +1,12 @@
 package com.eclipsense.voidexpanse.datagen.models;
 
-import com.eclipsense.voidexpanse.item.ModItems;
+import com.eclipsense.voidexpanse.init.ModItems;
 import com.eclipsense.voidexpanse.item.equipment.VoidEquipmentAssets;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ItemModelOutput;
 import net.minecraft.client.data.models.model.ModelInstance;
 import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.equipment.EquipmentAsset;
-import net.minecraft.world.item.equipment.EquipmentAssets;
 
 import java.util.function.BiConsumer;
 

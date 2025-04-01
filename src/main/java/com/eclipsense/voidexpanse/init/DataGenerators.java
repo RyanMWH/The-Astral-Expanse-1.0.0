@@ -1,4 +1,4 @@
-package com.eclipsense.voidexpanse.datagen;
+package com.eclipsense.voidexpanse.init;
 
 
 import com.eclipsense.voidexpanse.VoidExpanse;

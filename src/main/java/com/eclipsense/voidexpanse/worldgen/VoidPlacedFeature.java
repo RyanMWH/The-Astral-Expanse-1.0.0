@@ -1,7 +1,6 @@
 package com.eclipsense.voidexpanse.worldgen;
 
 import com.eclipsense.voidexpanse.VoidExpanse;
-import com.eclipsense.voidexpanse.block.ModBlocks;
 import net.minecraft.core.Holder;
 import net.minecraft.core.Vec3i;
 import net.minecraft.core.registries.Registries;

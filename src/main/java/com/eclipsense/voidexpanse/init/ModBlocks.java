@@ -1,6 +1,7 @@
-package com.eclipsense.voidexpanse.block;
+package com.eclipsense.voidexpanse.init;
 
 import com.eclipsense.voidexpanse.VoidExpanse;
+import com.eclipsense.voidexpanse.block.VoidiniumOreBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
