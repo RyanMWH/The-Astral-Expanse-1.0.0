@@ -21,7 +21,6 @@ public class EnderWispEntity extends PathfinderMob implements FlyingAnimal {
 
 
     public final AnimationState idleAnimationState = new AnimationState();
-    private int idleAnimationTimeout = 0;
 
     public static AttributeSupplier.Builder createAttributes(){
         return Animal.createLivingAttributes()
@@ -47,31 +46,17 @@ public class EnderWispEntity extends PathfinderMob implements FlyingAnimal {
         this.goalSelector.addGoal(1, new WaterAvoidingRandomFlyingGoal(this, 1.0D));
     }
 
-
     private void setupAnimationState() {
-        if (this.idleAnimationTimeout <= 0) {
-            this.idleAnimationTimeout = 80;
-            this.idleAnimationState.start(this.tickCount);
-        } else {
-            --this.idleAnimationTimeout;
-        }
+        this.idleAnimationState.startIfStopped(this.tickCount);
+
     }
 
     @Override
     public void tick() {
         super.tick();
 
-        if (this.level().isClientSide()) {
-            this.setupAnimationState();
-        }
+        this.setupAnimationState();
 
-        // Add some gentle bobbing effect to the movement
-        if (!this.level().isClientSide() && this.tickCount % 5 == 0) {
-            Vec3 motion = this.getDeltaMovement();
-            // Apply gentle Y-axis oscillation
-            double oscillation = Math.sin(this.tickCount * 0.1) * 0.03;
-            this.setDeltaMovement(motion.x, motion.y + oscillation, motion.z);
-        }
     }
 
     @Override

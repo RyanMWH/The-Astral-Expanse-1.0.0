@@ -27,5 +27,9 @@
   "block.voidexpanse.voidinium_block": "Voidinium Block",
 
   // Creative Mod Tab
-  "itemGroup.voidexpanse": "The Void Expanse"
+  "itemGroup.voidexpanse": "The Void Expanse",
+
+  // Spawn Eggs
+  "item.voidexpanse.ender_wisp_spawn_egg": "Ender Wisp Spawn Egg"
+
 }

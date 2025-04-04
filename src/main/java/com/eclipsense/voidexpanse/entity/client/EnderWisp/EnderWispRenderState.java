@@ -6,7 +6,7 @@ import net.minecraft.world.entity.AnimationState;
 
 public class EnderWispRenderState extends LivingEntityRenderState {
     public final AnimationState idleAnimationState = new AnimationState();
-    public float ageInTicks;
+
 
     public EnderWispRenderState() {
     }
