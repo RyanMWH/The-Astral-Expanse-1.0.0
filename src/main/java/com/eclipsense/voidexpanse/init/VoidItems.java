@@ -6,17 +6,16 @@ import com.eclipsense.voidexpanse.entity.VoidEntities;
 import com.eclipsense.voidexpanse.item.GlintItem;
 import com.eclipsense.voidexpanse.item.equipment.VoidArmorMaterials;
 import com.eclipsense.voidexpanse.item.equipment.VoidToolTiers;
-import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.equipment.ArmorType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-import static com.eclipsense.voidexpanse.init.ModBlocks.END_STONE_VOIDINIUM_ORE;
-import static com.eclipsense.voidexpanse.init.ModBlocks.VOIDINIUM_BLOCK;
+import static com.eclipsense.voidexpanse.init.VoidBlocks.END_STONE_VOIDINIUM_ORE;
+import static com.eclipsense.voidexpanse.init.VoidBlocks.VOIDINIUM_BLOCK;
 
-public class ModItems {
+public class VoidItems {
     //public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(Registries.ITEM, VoidExpanse.MODID);
 
     //public static final DeferredHolder<Item, Item> OUTPOST_MAP = ITEMS.register("outpost_map", () -> new Item(new Item.Properties()));
@@ -36,6 +35,8 @@ public class ModItems {
             properties -> new GlintItem(properties.fireResistant().stacksTo(16)));
     public static final DeferredItem<Item> VOID_FRAGMENT = ITEMS.registerItem("void_fragment",
             properties -> new GlintItem(properties.fireResistant().stacksTo(16)));
+    public static final DeferredItem<Item> ENDER_DUST = ITEMS.registerItem("ender_dust",
+            properties -> new Item(properties));
 
     // Voidinium Tools
     public static final DeferredItem<SwordItem> VOIDINIUM_SWORD = ITEMS.registerItem("voidinium_sword",
@@ -79,6 +80,9 @@ public class ModItems {
     // Spawn eggs
     public static final DeferredItem<SpawnEggItem> ENDER_WISP_SPAWN_EGG = ITEMS.registerItem("ender_wisp_spawn_egg",
             properties -> new SpawnEggItem(VoidEntities.ENDER_WISP.get(), properties));
+
+    public static final DeferredItem<SpawnEggItem> VOID_PROWLER_SPAWN_EGG = ITEMS.registerItem("void_prowler_spawn_egg",
+        properties -> new SpawnEggItem(VoidEntities.VOID_PROWLER.get(), properties));
 
 
 

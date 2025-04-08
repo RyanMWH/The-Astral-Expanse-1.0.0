@@ -1,6 +1,5 @@
-package com.eclipsense.voidexpanse.entity.client.EnderWisp;
+package com.eclipsense.voidexpanse.entity.client.enderwisp;
 
-import com.eclipsense.voidexpanse.entity.client.EnderWisp.EnderWispAnimations;
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelPart;

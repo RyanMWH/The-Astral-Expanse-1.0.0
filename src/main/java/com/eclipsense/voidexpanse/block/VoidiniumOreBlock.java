@@ -1,6 +1,6 @@
 package com.eclipsense.voidexpanse.block;
 
-import com.eclipsense.voidexpanse.init.ModItems;
+import com.eclipsense.voidexpanse.init.VoidItems;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -45,7 +45,7 @@ public class VoidiniumOreBlock extends Block {
         interact(state, level, pos);
         if(!level.isClientSide()) {
             ItemStack itemInHand = player.getItemInHand(InteractionHand.MAIN_HAND);
-            if (!itemInHand.is(Items.NETHERITE_PICKAXE) || !itemInHand.is(ModItems.VOIDINIUM_PICKAXE)) {
+            if (!itemInHand.is(Items.NETHERITE_PICKAXE) || !itemInHand.is(VoidItems.VOIDINIUM_PICKAXE)) {
                 double x = player.getX();
                 double y = player.getY();
                 double z = player.getZ();

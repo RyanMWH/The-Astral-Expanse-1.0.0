@@ -1,6 +1,6 @@
 package com.eclipsense.voidexpanse.armor;
 
-import com.eclipsense.voidexpanse.init.ModTags;
+import com.eclipsense.voidexpanse.init.VoidTags;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -41,7 +41,7 @@ public class VoidSpecialArmor extends ArmorItem {
         for (EquipmentSlot slot : new EquipmentSlot[]{ EquipmentSlot.HEAD, EquipmentSlot.CHEST, EquipmentSlot.LEGS, EquipmentSlot.FEET})
         {
             ItemStack equippedItem = player.getItemBySlot(slot);
-            if (equippedItem.isEmpty() || !equippedItem.is(ModTags.Items.VOIDINIUM_ARMOR)){
+            if (equippedItem.isEmpty() || !equippedItem.is(VoidTags.Items.VOIDINIUM_ARMOR)){
                 return false;
             }
 

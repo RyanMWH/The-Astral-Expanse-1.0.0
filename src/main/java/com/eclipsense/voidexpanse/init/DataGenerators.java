@@ -3,7 +3,8 @@ package com.eclipsense.voidexpanse.init;
 
 import com.eclipsense.voidexpanse.VoidExpanse;
 import com.eclipsense.voidexpanse.datagen.data.DataPackGen;
-import com.eclipsense.voidexpanse.datagen.loot.LootTableGen;
+import com.eclipsense.voidexpanse.datagen.loot.BlockLootTableGen;
+import com.eclipsense.voidexpanse.datagen.loot.MobLootTableGen;
 import com.eclipsense.voidexpanse.datagen.models.ModelGen;
 import com.eclipsense.voidexpanse.datagen.recipes.RecipeGen;
 import com.eclipsense.voidexpanse.datagen.tags.BlockTagGen;
@@ -22,6 +23,7 @@ import net.neoforged.neoforge.data.event.GatherDataEvent;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
 @EventBusSubscriber(modid = VoidExpanse.MODID, bus = EventBusSubscriber.Bus.MOD)
@@ -39,13 +41,16 @@ public class DataGenerators {
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
 
+
+
         // Create and call provider/generators
         generator.addProvider(true,
                 new LootTableProvider(packOutput,
                         Collections.emptySet(),
-                        List.of(new LootTableProvider.SubProviderEntry(LootTableGen::new,
-                                LootContextParamSets.BLOCK))
+                        List.of(new LootTableProvider.SubProviderEntry(BlockLootTableGen::new, LootContextParamSets.BLOCK),
+                                new LootTableProvider.SubProviderEntry(MobLootTableGen::new, LootContextParamSets.ENTITY))
                 ,lookupProvider));
+
 
         generator.addProvider(true,
                 new ModelGen(packOutput));

@@ -1,6 +1,6 @@
 package com.eclipsense.voidexpanse.item.equipment;
 
-import com.eclipsense.voidexpanse.init.ModTags;
+import com.eclipsense.voidexpanse.init.VoidTags;
 import net.minecraft.Util;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
@@ -25,7 +25,7 @@ public class VoidArmorMaterials {
             SoundEvents.ARMOR_EQUIP_GENERIC,
             3.5F,
             0,
-            ModTags.Items.VOIDINIUM_TOOL_MATERIALS,
+            VoidTags.Items.VOIDINIUM_TOOL_MATERIALS,
             ResourceKey.create(EquipmentAssets.ROOT_ID, ResourceLocation.fromNamespaceAndPath("voidexpanse", "voidinium"))
     );
 }

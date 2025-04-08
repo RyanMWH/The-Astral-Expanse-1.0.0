@@ -2,6 +2,7 @@ package com.eclipsense.voidexpanse.entity;
 
 import com.eclipsense.voidexpanse.VoidExpanse;
 import com.eclipsense.voidexpanse.entity.custom.EnderWispEntity;
+import com.eclipsense.voidexpanse.entity.custom.VoidProwlerEntity;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -22,6 +23,13 @@ public class VoidEntities {
             ENTITY_TYPES.register("ender_wisp",
                     () -> EntityType.Builder.of(EnderWispEntity::new, MobCategory.CREATURE)
                             .sized(0.25f, 0.25f).build(ResourceKey.create(Registries.ENTITY_TYPE, ResourceLocation.fromNamespaceAndPath("voidexpanse","ender_wisp"))));
+
+    public static final Supplier<EntityType<VoidProwlerEntity>> VOID_PROWLER =
+            ENTITY_TYPES.register("void_prowler",
+                    () -> EntityType.Builder.of(VoidProwlerEntity::new, MobCategory.MONSTER)
+                            .sized(0.25f, 0.25f).build(ResourceKey.create(Registries.ENTITY_TYPE, ResourceLocation.fromNamespaceAndPath("voidexpanse","void_prowler"))));
+
+
 
     public static void register(IEventBus eventBus){
         ENTITY_TYPES.register(eventBus);

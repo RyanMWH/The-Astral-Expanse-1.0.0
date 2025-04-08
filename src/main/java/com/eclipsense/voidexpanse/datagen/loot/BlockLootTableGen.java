@@ -1,7 +1,7 @@
 package com.eclipsense.voidexpanse.datagen.loot;
 
-import com.eclipsense.voidexpanse.init.ModBlocks;
-import com.eclipsense.voidexpanse.init.ModItems;
+import com.eclipsense.voidexpanse.init.VoidBlocks;
+import com.eclipsense.voidexpanse.init.VoidItems;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
@@ -24,18 +24,18 @@ import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 
 import java.util.Set;
 
-public class LootTableGen extends BlockLootSubProvider {
-    public LootTableGen(HolderLookup.Provider registries) {
+public class BlockLootTableGen extends BlockLootSubProvider {
+    public BlockLootTableGen(HolderLookup.Provider registries) {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags(), registries);
     }
 
     @Override
     protected void generate() {
-        dropSelf(ModBlocks.VOIDINIUM_BLOCK.get());
-        add(ModBlocks.END_STONE_VOIDINIUM_ORE.get(), createMultipleOreDropsWithRareDrop(
-                ModBlocks.END_STONE_VOIDINIUM_ORE.get(),
-                ModItems.VOIDINIUM_SHARD.get(),
-                ModItems.CONCENTRATED_VOIDINIUM.get(),
+        dropSelf(VoidBlocks.VOIDINIUM_BLOCK.get());
+        add(VoidBlocks.END_STONE_VOIDINIUM_ORE.get(), createMultipleOreDropsWithRareDrop(
+                VoidBlocks.END_STONE_VOIDINIUM_ORE.get(),
+                VoidItems.VOIDINIUM_SHARD.get(),
+                VoidItems.CONCENTRATED_VOIDINIUM.get(),
                 1.0f,
                 3.0f,
                 0.10f));
@@ -73,6 +73,6 @@ public class LootTableGen extends BlockLootSubProvider {
 
     @Override
     protected Iterable<Block> getKnownBlocks() {
-        return ModBlocks.BLOCKS.getEntries().stream().map(Holder::value)::iterator;
+        return VoidBlocks.BLOCKS.getEntries().stream().map(Holder::value)::iterator;
     }
 }

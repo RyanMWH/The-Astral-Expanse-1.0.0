@@ -1,14 +1,22 @@
 package com.eclipsense.voidexpanse;
 
 import com.eclipsense.voidexpanse.entity.VoidEntities;
-import com.eclipsense.voidexpanse.entity.client.EnderWisp.EnderWispModel;
-import com.eclipsense.voidexpanse.entity.client.EnderWisp.EnderWispRenderer;
-import com.eclipsense.voidexpanse.init.ModBlocks;
-import com.eclipsense.voidexpanse.init.ModItems;
+import com.eclipsense.voidexpanse.entity.client.enderwisp.EnderWispModel;
+import com.eclipsense.voidexpanse.entity.client.enderwisp.EnderWispRenderer;
+import com.eclipsense.voidexpanse.init.VoidBlocks;
+import com.eclipsense.voidexpanse.init.VoidEffects;
+import com.eclipsense.voidexpanse.init.VoidItems;
+import com.eclipsense.voidexpanse.init.VoidPotions;
+import net.minecraft.client.color.item.Potion;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.effect.MobEffectUtil;
+import net.minecraft.world.item.*;
+import net.minecraft.world.item.alchemy.PotionBrewing;
+import net.minecraft.world.item.alchemy.PotionContents;
+import net.minecraft.world.item.alchemy.Potions;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -16,8 +24,6 @@ import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
 
-
-import net.minecraft.world.item.CreativeModeTabs;
 
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -45,25 +51,30 @@ public class VoidExpanse {
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> VOID_EXPANSE = CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.voidexpanse")) //The language key for the title of your CreativeModeTab
             .withTabsBefore(CreativeModeTabs.COMBAT)
-            .icon(() -> ModItems.VOID_INFUSED_HEART.get().getDefaultInstance())
+            .icon(() -> VoidItems.VOID_INFUSED_HEART.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
-                output.accept(ModItems.VOID_INFUSED_HEART.get());
-                output.accept(ModItems.VOID_FRAGMENT.get());
-                output.accept(ModItems.END_STONE_VOIDINIUM_ORE_ITEM.get());
-                output.accept(ModItems.VOIDINIUM_SHARD.get());
-                output.accept(ModItems.CONCENTRATED_VOIDINIUM.get());
-                output.accept(ModItems.VOIDINIUM_INGOT.get());
-                output.accept(ModItems.VOIDINIUM_BLOCK_ITEM.get());
-                output.accept(ModItems.VOIDINIUM_SWORD);
-                output.accept(ModItems.VOIDINIUM_PICKAXE);
-                output.accept(ModItems.VOIDINIUM_AXE);
-                output.accept(ModItems.VOIDINIUM_SHOVEL);
-                output.accept(ModItems.VOIDINIUM_HOE);
-                output.accept(ModItems.VOIDINIUM_HELMET);
-                output.accept(ModItems.VOIDINIUM_CHESTPLATE);
-                output.accept(ModItems.VOIDINIUM_LEGGINGS);
-                output.accept(ModItems.VOIDINIUM_BOOTS);
-                output.accept(ModItems.ENDER_WISP_SPAWN_EGG);
+                output.accept(VoidItems.VOID_INFUSED_HEART.get());
+                output.accept(VoidItems.VOID_FRAGMENT.get());
+                output.accept(VoidItems.ENDER_DUST.get());
+                output.accept(VoidItems.END_STONE_VOIDINIUM_ORE_ITEM.get());
+                output.accept(VoidItems.VOIDINIUM_SHARD.get());
+                output.accept(VoidItems.CONCENTRATED_VOIDINIUM.get());
+                output.accept(VoidItems.VOIDINIUM_INGOT.get());
+                output.accept(VoidItems.VOIDINIUM_BLOCK_ITEM.get());
+                output.accept(VoidItems.VOIDINIUM_SWORD);
+                output.accept(VoidItems.VOIDINIUM_PICKAXE);
+                output.accept(VoidItems.VOIDINIUM_AXE);
+                output.accept(VoidItems.VOIDINIUM_SHOVEL);
+                output.accept(VoidItems.VOIDINIUM_HOE);
+                output.accept(VoidItems.VOIDINIUM_HELMET);
+                output.accept(VoidItems.VOIDINIUM_CHESTPLATE);
+                output.accept(VoidItems.VOIDINIUM_LEGGINGS);
+                output.accept(VoidItems.VOIDINIUM_BOOTS);
+
+                output.accept(VoidItems.ENDER_WISP_SPAWN_EGG);
+
+
+
 
 
             }).build());
@@ -82,11 +93,16 @@ public class VoidExpanse {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
-        ModItems.register(modEventBus);
+        VoidItems.register(modEventBus);
 
-        ModBlocks.register(modEventBus);
+        VoidBlocks.register(modEventBus);
 
         VoidEntities.register(modEventBus);
+
+        VoidEffects.register(modEventBus);
+
+        VoidPotions.register(modEventBus);
+
         CREATIVE_MODE_TABS.register(modEventBus);
 
         // Register the item to a creative tab

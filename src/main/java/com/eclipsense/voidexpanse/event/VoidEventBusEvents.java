@@ -2,17 +2,15 @@ package com.eclipsense.voidexpanse.event;
 
 import com.eclipsense.voidexpanse.VoidExpanse;
 import com.eclipsense.voidexpanse.entity.VoidEntities;
-import com.eclipsense.voidexpanse.entity.client.EnderWisp.EnderWispModel;
+import com.eclipsense.voidexpanse.entity.client.enderwisp.EnderWispModel;
 import com.eclipsense.voidexpanse.entity.custom.EnderWispEntity;
 import net.minecraft.world.entity.*;
-import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
-import org.jetbrains.annotations.Nullable;
 
 @EventBusSubscriber(modid = VoidExpanse.MODID, bus = EventBusSubscriber.Bus.MOD)
 public class VoidEventBusEvents {

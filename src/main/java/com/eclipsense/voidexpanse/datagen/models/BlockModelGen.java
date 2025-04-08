@@ -1,6 +1,6 @@
 package com.eclipsense.voidexpanse.datagen.models;
 
-import com.eclipsense.voidexpanse.init.ModBlocks;
+import com.eclipsense.voidexpanse.init.VoidBlocks;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelOutput;
 import net.minecraft.client.data.models.blockstates.BlockStateGenerator;
@@ -21,8 +21,8 @@ public class BlockModelGen extends BlockModelGenerators {
     @Override
     public void run() {
         // Block Item Models
-        this.createTrivialCube(ModBlocks.VOIDINIUM_BLOCK.get());
-        this.createTrivialCube(ModBlocks.END_STONE_VOIDINIUM_ORE.get());
+        this.createTrivialCube(VoidBlocks.VOIDINIUM_BLOCK.get());
+        this.createTrivialCube(VoidBlocks.END_STONE_VOIDINIUM_ORE.get());
     }
 
 }

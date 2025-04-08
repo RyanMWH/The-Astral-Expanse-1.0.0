@@ -1,7 +1,7 @@
 package com.eclipsense.voidexpanse.datagen.tags;
 
 import com.eclipsense.voidexpanse.VoidExpanse;
-import com.eclipsense.voidexpanse.init.ModTags;
+import com.eclipsense.voidexpanse.init.VoidTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -20,11 +20,11 @@ public class BlockTagGen extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        tag(ModTags.Blocks.NEEDS_VOIDINIUM_TOOL)
+        tag(VoidTags.Blocks.NEEDS_VOIDINIUM_TOOL)
                 .addTag(Tags.Blocks.NEEDS_NETHERITE_TOOL);
 
-        tag(ModTags.Blocks.INCORRECT_FOR_VOIDINIUM_TOOL)
-                .remove(ModTags.Blocks.NEEDS_VOIDINIUM_TOOL)
+        tag(VoidTags.Blocks.INCORRECT_FOR_VOIDINIUM_TOOL)
+                .remove(VoidTags.Blocks.NEEDS_VOIDINIUM_TOOL)
                 .addTag(BlockTags.INCORRECT_FOR_NETHERITE_TOOL);
     }
 }

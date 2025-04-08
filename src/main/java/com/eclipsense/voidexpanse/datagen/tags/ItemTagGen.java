@@ -1,8 +1,8 @@
 package com.eclipsense.voidexpanse.datagen.tags;
 
 import com.eclipsense.voidexpanse.VoidExpanse;
-import com.eclipsense.voidexpanse.init.ModItems;
-import com.eclipsense.voidexpanse.init.ModTags;
+import com.eclipsense.voidexpanse.init.VoidItems;
+import com.eclipsense.voidexpanse.init.VoidTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
@@ -21,39 +21,39 @@ public class ItemTagGen extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        tag(ModTags.Items.VOIDINIUM_TOOL_MATERIALS)
-                .add(ModItems.VOIDINIUM_INGOT.get());
+        tag(VoidTags.Items.VOIDINIUM_TOOL_MATERIALS)
+                .add(VoidItems.VOIDINIUM_INGOT.get());
 
-        tag(ModTags.Items.VOIDINIUM_ARMOR)
-                .add(ModItems.VOIDINIUM_HELMET.get())
-                .add(ModItems.VOIDINIUM_CHESTPLATE.get())
-                .add(ModItems.VOIDINIUM_LEGGINGS.get())
-                .add(ModItems.VOIDINIUM_BOOTS.get());
+        tag(VoidTags.Items.VOIDINIUM_ARMOR)
+                .add(VoidItems.VOIDINIUM_HELMET.get())
+                .add(VoidItems.VOIDINIUM_CHESTPLATE.get())
+                .add(VoidItems.VOIDINIUM_LEGGINGS.get())
+                .add(VoidItems.VOIDINIUM_BOOTS.get());
 
         tag(ItemTags.SWORD_ENCHANTABLE)
-                .add(ModItems.VOIDINIUM_SWORD.get());
+                .add(VoidItems.VOIDINIUM_SWORD.get());
         tag(ItemTags.SWORDS)
-                .add(ModItems.VOIDINIUM_SWORD.get());
+                .add(VoidItems.VOIDINIUM_SWORD.get());
         tag(ItemTags.PICKAXES)
-                .add(ModItems.VOIDINIUM_PICKAXE.get());
+                .add(VoidItems.VOIDINIUM_PICKAXE.get());
         tag(ItemTags.AXES)
-                .add(ModItems.VOIDINIUM_AXE.get());
+                .add(VoidItems.VOIDINIUM_AXE.get());
         tag(ItemTags.SHOVELS)
-                .add(ModItems.VOIDINIUM_SHOVEL.get());
+                .add(VoidItems.VOIDINIUM_SHOVEL.get());
         tag(ItemTags.HOES)
-                .add(ModItems.VOIDINIUM_HOE.get());
+                .add(VoidItems.VOIDINIUM_HOE.get());
 
         tag(ItemTags.TRIMMABLE_ARMOR)
-                .add(ModItems.VOIDINIUM_HELMET.get())
-                .add(ModItems.VOIDINIUM_CHESTPLATE.get())
-                .add(ModItems.VOIDINIUM_LEGGINGS.get())
-                .add(ModItems.VOIDINIUM_BOOTS.get());
+                .add(VoidItems.VOIDINIUM_HELMET.get())
+                .add(VoidItems.VOIDINIUM_CHESTPLATE.get())
+                .add(VoidItems.VOIDINIUM_LEGGINGS.get())
+                .add(VoidItems.VOIDINIUM_BOOTS.get());
 
         tag(ItemTags.ARMOR_ENCHANTABLE)
-                .add(ModItems.VOIDINIUM_HELMET.get())
-                .add(ModItems.VOIDINIUM_CHESTPLATE.get())
-                .add(ModItems.VOIDINIUM_LEGGINGS.get())
-                .add(ModItems.VOIDINIUM_BOOTS.get());
+                .add(VoidItems.VOIDINIUM_HELMET.get())
+                .add(VoidItems.VOIDINIUM_CHESTPLATE.get())
+                .add(VoidItems.VOIDINIUM_LEGGINGS.get())
+                .add(VoidItems.VOIDINIUM_BOOTS.get());
 
 
 

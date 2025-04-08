@@ -1,4 +1,4 @@
-package com.eclipsense.voidexpanse.entity.client.EnderWisp;
+package com.eclipsense.voidexpanse.entity.client.enderwisp;
 
 import net.minecraft.client.animation.AnimationChannel;
 import net.minecraft.client.animation.AnimationDefinition;

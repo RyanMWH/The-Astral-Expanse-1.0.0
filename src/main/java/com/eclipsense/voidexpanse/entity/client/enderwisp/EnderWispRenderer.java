@@ -1,12 +1,9 @@
-package com.eclipsense.voidexpanse.entity.client.EnderWisp;
+package com.eclipsense.voidexpanse.entity.client.enderwisp;
 
 import com.eclipsense.voidexpanse.VoidExpanse;
 import com.eclipsense.voidexpanse.entity.custom.EnderWispEntity;
-import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.MobRenderer;
-import net.minecraft.client.renderer.entity.state.EntityRenderState;
-import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
 

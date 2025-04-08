@@ -5,6 +5,7 @@
   "item.voidexpanse.voidinium_shard": "Voidinium Shard",
   "item.voidexpanse.concentrated_voidinium": "Concentrated Voidinium",
   "item.voidexpanse.voidinium_ingot": "Voidinium Ingot",
+  "item.voidexpanse.ender_dust": "Ender Dust",
 
   // Tools
   "item.voidexpanse.voidinium_sword": "Voidinium Sword",
@@ -30,6 +31,15 @@
   "itemGroup.voidexpanse": "The Void Expanse",
 
   // Spawn Eggs
-  "item.voidexpanse.ender_wisp_spawn_egg": "Ender Wisp Spawn Egg"
+  "item.voidexpanse.ender_wisp_spawn_egg": "Ender Wisp Spawn Egg",
+
+  // Effects & Effects
+  "effect.voidexpanse.void_hunger": "Void Leech",
+  "item.minecraft.potion.effect.void_hunger_potion": "Void Leech Potion",
+  "item.minecraft.splash_potion.effect.void_hunger_potion": "Void Leech Splash Potion",
+  "item.minecraft.lingering_potion.effect.void_hunger_potion": "Void Leech Lingering Potion",
+  "item.minecraft.tipped_arrow.effect.void_hunger_potion": "Arrow of Void Leech"
+
+
 
 }

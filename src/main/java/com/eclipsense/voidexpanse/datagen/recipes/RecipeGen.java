@@ -1,8 +1,8 @@
 package com.eclipsense.voidexpanse.datagen.recipes;
 
 
-import com.eclipsense.voidexpanse.init.ModBlocks;
-import com.eclipsense.voidexpanse.init.ModItems;
+import com.eclipsense.voidexpanse.init.VoidBlocks;
+import com.eclipsense.voidexpanse.init.VoidItems;
 import com.google.common.collect.ImmutableList;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -17,7 +17,7 @@ import java.util.concurrent.CompletableFuture;
 
 public class RecipeGen extends RecipeProvider{
 
-    public static final ImmutableList<ItemLike> VOIDINIUM_SMELTABLES = ImmutableList.of(ModItems.CONCENTRATED_VOIDINIUM.get());
+    public static final ImmutableList<ItemLike> VOIDINIUM_SMELTABLES = ImmutableList.of(VoidItems.CONCENTRATED_VOIDINIUM.get());
 
 
     public RecipeGen(HolderLookup.Provider registries, RecipeOutput output) {
@@ -28,80 +28,80 @@ public class RecipeGen extends RecipeProvider{
     protected void buildRecipes() {
 
         // Voidinium Stuff
-        threeByThreePacker(RecipeCategory.MISC, ModBlocks.VOIDINIUM_BLOCK, ModItems.VOIDINIUM_INGOT);
-        threeByThreePacker(RecipeCategory.MISC, ModItems.CONCENTRATED_VOIDINIUM, ModItems.VOIDINIUM_SHARD);
-        oreBlasting(VOIDINIUM_SMELTABLES, RecipeCategory.MISC, ModItems.VOIDINIUM_INGOT.get(), 1.0f, 200, "voidinium_ingot");
+        threeByThreePacker(RecipeCategory.MISC, VoidBlocks.VOIDINIUM_BLOCK, VoidItems.VOIDINIUM_INGOT);
+        threeByThreePacker(RecipeCategory.MISC, VoidItems.CONCENTRATED_VOIDINIUM, VoidItems.VOIDINIUM_SHARD);
+        oreBlasting(VOIDINIUM_SMELTABLES, RecipeCategory.MISC, VoidItems.VOIDINIUM_INGOT.get(), 1.0f, 200, "voidinium_ingot");
 
         // Voidinium Tools
-        shaped(RecipeCategory.TOOLS, ModItems.VOIDINIUM_PICKAXE)
+        shaped(RecipeCategory.TOOLS, VoidItems.VOIDINIUM_PICKAXE)
                 .pattern("VVV")
                 .pattern(" S ")
                 .pattern(" S ")
-                .define('S', Items.STICK).define('V', ModItems.VOIDINIUM_INGOT)
-                .unlockedBy("has_voidinium_ingot", has(ModItems.VOIDINIUM_INGOT))
+                .define('S', Items.STICK).define('V', VoidItems.VOIDINIUM_INGOT)
+                .unlockedBy("has_voidinium_ingot", has(VoidItems.VOIDINIUM_INGOT))
                 .save(output);
 
-        shaped(RecipeCategory.TOOLS, ModItems.VOIDINIUM_SHOVEL)
+        shaped(RecipeCategory.TOOLS, VoidItems.VOIDINIUM_SHOVEL)
                 .pattern("V")
                 .pattern("S")
                 .pattern("S")
-                .define('S', Items.STICK).define('V', ModItems.VOIDINIUM_INGOT)
-                .unlockedBy("has_voidinium_ingot", has(ModItems.VOIDINIUM_INGOT))
+                .define('S', Items.STICK).define('V', VoidItems.VOIDINIUM_INGOT)
+                .unlockedBy("has_voidinium_ingot", has(VoidItems.VOIDINIUM_INGOT))
                 .save(output);
 
-        shaped(RecipeCategory.TOOLS, ModItems.VOIDINIUM_AXE)
+        shaped(RecipeCategory.TOOLS, VoidItems.VOIDINIUM_AXE)
                 .pattern("VV")
                 .pattern("VS")
                 .pattern(" S")
-                .define('S', Items.STICK).define('V', ModItems.VOIDINIUM_INGOT)
-                .unlockedBy("has_voidinium_ingot", has(ModItems.VOIDINIUM_INGOT))
+                .define('S', Items.STICK).define('V', VoidItems.VOIDINIUM_INGOT)
+                .unlockedBy("has_voidinium_ingot", has(VoidItems.VOIDINIUM_INGOT))
                 .save(output);
 
-        shaped(RecipeCategory.TOOLS, ModItems.VOIDINIUM_HOE)
+        shaped(RecipeCategory.TOOLS, VoidItems.VOIDINIUM_HOE)
                 .pattern("VV")
                 .pattern(" S")
                 .pattern(" S")
-                .define('S', Items.STICK).define('V', ModItems.VOIDINIUM_INGOT)
-                .unlockedBy("has_voidinium_ingot", has(ModItems.VOIDINIUM_INGOT))
+                .define('S', Items.STICK).define('V', VoidItems.VOIDINIUM_INGOT)
+                .unlockedBy("has_voidinium_ingot", has(VoidItems.VOIDINIUM_INGOT))
                 .save(output);
 
-        shaped(RecipeCategory.TOOLS, ModItems.VOIDINIUM_SWORD)
+        shaped(RecipeCategory.TOOLS, VoidItems.VOIDINIUM_SWORD)
                 .pattern("V")
                 .pattern("V")
                 .pattern("S")
-                .define('S', Items.STICK).define('V', ModItems.VOIDINIUM_INGOT)
-                .unlockedBy("has_voidinium_ingot", has(ModItems.VOIDINIUM_INGOT))
+                .define('S', Items.STICK).define('V', VoidItems.VOIDINIUM_INGOT)
+                .unlockedBy("has_voidinium_ingot", has(VoidItems.VOIDINIUM_INGOT))
                 .save(output);
 
         // Voidinium Armor
-        shaped(RecipeCategory.TOOLS, ModItems.VOIDINIUM_HELMET)
+        shaped(RecipeCategory.TOOLS, VoidItems.VOIDINIUM_HELMET)
                 .pattern("VVV")
                 .pattern("V V")
-                .define('V', ModItems.VOIDINIUM_INGOT)
-                .unlockedBy("has_voidinium_ingot", has(ModItems.VOIDINIUM_INGOT))
+                .define('V', VoidItems.VOIDINIUM_INGOT)
+                .unlockedBy("has_voidinium_ingot", has(VoidItems.VOIDINIUM_INGOT))
                 .save(output);
 
-        shaped(RecipeCategory.COMBAT, ModItems.VOIDINIUM_CHESTPLATE)
+        shaped(RecipeCategory.COMBAT, VoidItems.VOIDINIUM_CHESTPLATE)
                 .pattern("V V")
                 .pattern("VVV")
                 .pattern("VVV")
-                .define('V', ModItems.VOIDINIUM_INGOT)
-                .unlockedBy("has_voidinium_ingot", has(ModItems.VOIDINIUM_INGOT))
+                .define('V', VoidItems.VOIDINIUM_INGOT)
+                .unlockedBy("has_voidinium_ingot", has(VoidItems.VOIDINIUM_INGOT))
                 .save(output);
 
-        shaped(RecipeCategory.COMBAT, ModItems.VOIDINIUM_LEGGINGS)
+        shaped(RecipeCategory.COMBAT, VoidItems.VOIDINIUM_LEGGINGS)
                 .pattern("VVV")
                 .pattern("V V")
                 .pattern("V V")
-                .define('V', ModItems.VOIDINIUM_INGOT)
-                .unlockedBy("has_voidinium_ingot", has(ModItems.VOIDINIUM_INGOT))
+                .define('V', VoidItems.VOIDINIUM_INGOT)
+                .unlockedBy("has_voidinium_ingot", has(VoidItems.VOIDINIUM_INGOT))
                 .save(output);
 
-        shaped(RecipeCategory.COMBAT, ModItems.VOIDINIUM_BOOTS)
+        shaped(RecipeCategory.COMBAT, VoidItems.VOIDINIUM_BOOTS)
                 .pattern("V V")
                 .pattern("V V")
-                .define('V', ModItems.VOIDINIUM_INGOT)
-                .unlockedBy("has_voidinium_ingot", has(ModItems.VOIDINIUM_INGOT))
+                .define('V', VoidItems.VOIDINIUM_INGOT)
+                .unlockedBy("has_voidinium_ingot", has(VoidItems.VOIDINIUM_INGOT))
                 .save(output);
 
 

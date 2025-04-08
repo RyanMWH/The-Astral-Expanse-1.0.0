@@ -1,7 +1,7 @@
 package com.eclipsense.voidexpanse.worldgen;
 
 import com.eclipsense.voidexpanse.VoidExpanse;
-import com.eclipsense.voidexpanse.init.ModBlocks;
+import com.eclipsense.voidexpanse.init.VoidBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
@@ -27,11 +27,11 @@ public class VoidConfiguredFeature {
 
         // Made this in case we want to add more ores to the end.
         List<OreConfiguration.TargetBlockState> endVoidiniumOres = List.of(
-                OreConfiguration.target(endStoneReplaceables, ModBlocks.END_STONE_VOIDINIUM_ORE.get().defaultBlockState())
+                OreConfiguration.target(endStoneReplaceables, VoidBlocks.END_STONE_VOIDINIUM_ORE.get().defaultBlockState())
         );
 
         register(context, END_VOIDINIUM_ORE_KEY, Feature.ORE, new OreConfiguration(endStoneReplaceables,
-                ModBlocks.END_STONE_VOIDINIUM_ORE.get().defaultBlockState(),
+                VoidBlocks.END_STONE_VOIDINIUM_ORE.get().defaultBlockState(),
                 10));
 
     }

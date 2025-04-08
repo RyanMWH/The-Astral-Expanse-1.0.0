@@ -1,6 +1,5 @@
-package com.eclipsense.voidexpanse.entity.client.EnderWisp;
+package com.eclipsense.voidexpanse.entity.client.enderwisp;
 
-import com.eclipsense.voidexpanse.entity.custom.EnderWispEntity;
 import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
 import net.minecraft.world.entity.AnimationState;
 
