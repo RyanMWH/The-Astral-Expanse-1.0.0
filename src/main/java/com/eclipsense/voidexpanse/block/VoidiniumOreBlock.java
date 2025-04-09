@@ -45,7 +45,9 @@ public class VoidiniumOreBlock extends Block {
         interact(state, level, pos);
         if(!level.isClientSide()) {
             ItemStack itemInHand = player.getItemInHand(InteractionHand.MAIN_HAND);
-            if (!itemInHand.is(Items.NETHERITE_PICKAXE) || !itemInHand.is(VoidItems.VOIDINIUM_PICKAXE)) {
+            if (itemInHand.is(Items.NETHERITE_PICKAXE) || itemInHand.is(VoidItems.VOIDINIUM_PICKAXE)) {
+                int ifFiller = 0;
+            } else {
                 double x = player.getX();
                 double y = player.getY();
                 double z = player.getZ();
