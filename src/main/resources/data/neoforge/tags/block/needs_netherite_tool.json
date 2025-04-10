@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "voidexpanse:end_stone_voidinium_ore",
-    "voidexpanse:voidinium_block"
+    "astralexpanse:end_stone_voidinium_ore",
+    "astralexpanse:voidinium_block"
   ]
 }

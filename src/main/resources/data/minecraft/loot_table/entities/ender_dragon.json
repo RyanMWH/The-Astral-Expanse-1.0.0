@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:exploration_map",
-              "destination": "voidexpanse:observers_outpost",
+              "destination": "astralexpanse:observers_outpost",
               "decoration": "red_x",
               "zoom": 2,
               "search_radius": 100,
@@ -25,7 +25,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "voidexpanse:void_infused_heart",
+          "name": "astralexpanse:void_infused_heart",
           "conditions": []
         }
       ]

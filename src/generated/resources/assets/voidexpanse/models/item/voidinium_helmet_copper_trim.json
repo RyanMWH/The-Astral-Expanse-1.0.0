@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "voidexpanse:item/voidinium_helmet",
-    "layer1": "minecraft:trims/items/helment_trim_copper"
-  }
-}

@@ -4,9 +4,9 @@
   "cookingtime": 200,
   "experience": 1.0,
   "group": "voidinium_ingot",
-  "ingredient": "voidexpanse:concentrated_voidinium",
+  "ingredient": "astralexpanse:concentrated_voidinium",
   "result": {
     "count": 1,
-    "id": "voidexpanse:voidinium_ingot"
+    "id": "astralexpanse:voidinium_ingot"
   }
 }

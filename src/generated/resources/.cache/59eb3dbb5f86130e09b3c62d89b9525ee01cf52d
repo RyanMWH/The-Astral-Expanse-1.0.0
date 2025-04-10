@@ -1,5 +1,5 @@
-// 1.21.4	2025-04-07T20:15:55.040381	Loot Tables
-e4f6792cbd8f9cc34d4ee09987d85c4ab8617c9c data/voidexpanse/loot_table/blocks/end_stone_voidinium_ore.json
-5e95904f91e88de78083ba024e2b94801f5ee119 data/voidexpanse/loot_table/blocks/voidinium_block.json
-c784c29f7a3e3fb3feed2b2ef59caba74851015f data/voidexpanse/loot_table/entities/ender_wisp.json
-360d67c6fba390a7451ec65efa473531920fb750 data/voidexpanse/loot_table/entities/void_prowler.json
+// 1.21.4	2025-04-09T23:24:23.848003	Loot Tables
+67a6afbe3ab22e5fd65c1b913560c0d0152287c9 data/astralexpanse/loot_table/blocks/end_stone_voidinium_ore.json
+c20ea0cb9a1359d72687b55e54cc14fc8d7341c2 data/astralexpanse/loot_table/blocks/voidinium_block.json
+e6a628227cf00b6b8c3b611bad146738ff4b788a data/astralexpanse/loot_table/entities/ender_wisp.json
+dbb78fd178337effdca26322d6f77397e512bf32 data/astralexpanse/loot_table/entities/void_prowler.json

@@ -1,0 +1,45 @@
+{
+  // Items
+  "item.astralexpanse.void_infused_heart": "Void Infused Heart",
+  "item.astralexpanse.void_fragment": "Fragment of the Void",
+  "item.astralexpanse.voidinium_shard": "Voidinium Shard",
+  "item.astralexpanse.concentrated_voidinium": "Concentrated Voidinium",
+  "item.astralexpanse.voidinium_ingot": "Voidinium Ingot",
+  "item.astralexpanse.ender_dust": "Ender Dust",
+
+  // Tools
+  "item.astralexpanse.voidinium_sword": "Voidinium Sword",
+  "item.astralexpanse.voidinium_pickaxe": "Voidinium Pickaxe",
+  "item.astralexpanse.voidinium_axe": "Voidinium Axe",
+  "item.astralexpanse.voidinium_shovel": "Voidinium Shovel",
+  "item.astralexpanse.voidinium_hoe": "Voidinium Hoe",
+
+  // Armors
+  "item.astralexpanse.voidinium_boots": "Voidinium Boots",
+  "item.astralexpanse.voidinium_leggings": "Voidinium Leggings",
+  "item.astralexpanse.voidinium_chestplate": "Voidinium Chestplate",
+  "item.astralexpanse.voidinium_helmet": "Voidinium Helmet",
+
+
+
+
+  // Blocks
+  "block.astralexpanse.end_stone_voidinium_ore": "End Stone Voidinium Ore",
+  "block.astralexpanse.voidinium_block": "Voidinium Block",
+
+  // Creative Mod Tab
+  "itemGroup.astralexpanse": "The Astral Expanse",
+
+  // Spawn Eggs
+  "item.astralexpanse.ender_wisp_spawn_egg": "Ender Wisp Spawn Egg",
+
+  // Effects & Effects
+  "effect.astralexpanse.void_hunger": "Void Leech",
+  "item.minecraft.potion.effect.void_hunger_potion": "Void Leech Potion",
+  "item.minecraft.splash_potion.effect.void_hunger_potion": "Void Leech Splash Potion",
+  "item.minecraft.lingering_potion.effect.void_hunger_potion": "Void Leech Lingering Potion",
+  "item.minecraft.tipped_arrow.effect.void_hunger_potion": "Arrow of Void Leech"
+
+
+
+}

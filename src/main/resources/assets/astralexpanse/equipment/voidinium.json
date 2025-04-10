@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "astralexpanse:voidinium"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "astralexpanse:voidinium"
+      }
+    ]
+  }
+}
