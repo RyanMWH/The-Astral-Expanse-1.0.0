@@ -40,7 +40,7 @@ public class VoidiniumOreBlock extends Block {
         }
     }
 
-    @Override
+    /*@Override
     protected void attack(BlockState state, Level level, BlockPos pos, Player player) {
         interact(state, level, pos);
         if(!level.isClientSide()) {
@@ -64,11 +64,7 @@ public class VoidiniumOreBlock extends Block {
                 player.teleportTo(newx, newy, newz);
             }
         }
-    }
-
-    protected void attack(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand) {
-
-    }
+    }*/
 
     public void stepOn(Level level, BlockPos pos, BlockState state, Entity ent) {
         if (!ent.isSteppingCarefully()) {
