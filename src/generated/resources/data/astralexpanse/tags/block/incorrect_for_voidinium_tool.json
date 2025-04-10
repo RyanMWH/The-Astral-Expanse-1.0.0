@@ -1,0 +1,8 @@
+{
+  "remove": [
+    "#astralexpanse:needs_voidinium_tool"
+  ],
+  "values": [
+    "#minecraft:incorrect_for_netherite_tool"
+  ]
+}

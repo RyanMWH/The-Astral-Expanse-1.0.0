@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "S": "minecraft:stick",
+    "V": "astralexpanse:voidinium_ingot"
+  },
+  "pattern": [
+    "V",
+    "S",
+    "S"
+  ],
+  "result": {
+    "count": 1,
+    "id": "astralexpanse:voidinium_shovel"
+  }
+}

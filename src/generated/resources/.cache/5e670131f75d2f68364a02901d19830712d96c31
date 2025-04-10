@@ -1,0 +1,11 @@
+// 1.21.4	2025-04-09T23:24:23.846866	Tags for minecraft:item mod id astralexpanse
+eddbf55b76e7aef1867ca4aa967adf2a348dd981 data/astralexpanse/tags/item/voidinium_armor.json
+15c51077d997e4fe325c318b83abd4448cacc540 data/astralexpanse/tags/item/voidinium_tool_materials.json
+768ab3acf07dab4730363f94ea6f9fa80ed4b0ab data/minecraft/tags/item/axes.json
+eddbf55b76e7aef1867ca4aa967adf2a348dd981 data/minecraft/tags/item/enchantable/armor.json
+8cef206ec3ae3deca33dc8af06f8b2455d222195 data/minecraft/tags/item/enchantable/sword.json
+7adab0caafe3aee29b2956246fb4d7db898a1a47 data/minecraft/tags/item/hoes.json
+0d01944b7af14de3d1fd994d27dc60aa8c3c0305 data/minecraft/tags/item/pickaxes.json
+5c8a171ab65ef3755771ab1267c298a1daf72fb7 data/minecraft/tags/item/shovels.json
+8cef206ec3ae3deca33dc8af06f8b2455d222195 data/minecraft/tags/item/swords.json
+eddbf55b76e7aef1867ca4aa967adf2a348dd981 data/minecraft/tags/item/trimmable_armor.json

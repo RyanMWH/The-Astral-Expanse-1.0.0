@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "astralexpanse:voidinium_shard",
+    "astralexpanse:voidinium_shard",
+    "astralexpanse:voidinium_shard",
+    "astralexpanse:voidinium_shard",
+    "astralexpanse:voidinium_shard",
+    "astralexpanse:voidinium_shard",
+    "astralexpanse:voidinium_shard",
+    "astralexpanse:voidinium_shard",
+    "astralexpanse:voidinium_shard"
+  ],
+  "result": {
+    "count": 1,
+    "id": "astralexpanse:concentrated_voidinium"
+  }
+}
